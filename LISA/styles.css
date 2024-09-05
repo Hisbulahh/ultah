@@ -1,0 +1,121 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bubblegum Sans', cursive; /* Replace with your favorite font */
+}
+
+body {
+    background: linear-gradient(to bottom right, #FFC5C5, #FF69B4); /* More vibrant color scheme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Title */
+h1 {
+    color: #FF69B4;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: bounce 1s infinite;
+}
+
+/* Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s; /* Add fade-in animation */
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Button */
+button {
+    background-color: #FF69B4;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #F28B8B;
+}
+
+/* Decorative Elements */
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FF69B4;
+    font-size: 2rem;
+    animation: heartBeat 1s infinite;
+}
+
+.sparkles {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('sparkles.gif'); /* Replace with your sparkles image */
+    background-size: contain;
+    animation: sparkle 2s infinite;
+}
+
+.confetti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('confetti.gif'); /* Replace with your confetti image */
+    background-size: contain;
+    animation: confetti 2s infinite;
+}
+
+/* Sparkly Background */
+.sparkly-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('sparkly-background.png'); /* Replace with your sparkly background image */
+    background-size: cover;
+    animation: sparkle-background 10s infinite linear;
+    z-index: -1; /* Place it behind other elements */
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10
